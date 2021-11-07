@@ -58,10 +58,7 @@ for i in range (0,len(nombre)):
     e=e+1
     nombre_1=nombre_1+t
 
-print("Le nombre",nombre,"de la base",base_i,"à la base",base_f,"est",base_1(nombre_1,base_f))
-
-#print(base_1(nombre_1,base_f))
-        
+print("Le nombre",nombre,"de la base",base_i,"à la base",base_f,"est",base_1(nombre_1,base_f))        
     
     
 
