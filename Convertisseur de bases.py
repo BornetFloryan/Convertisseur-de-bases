@@ -1,4 +1,4 @@
-#Programme division euclidienne de la base 10 à la base souhaitée.
+#Programme division euclidienne de la base 10 à la base finale.
 def base_final(n,f):
     if n==0:
         return '0' 
@@ -21,6 +21,9 @@ if len(nombre)>20: #Vérifie si le nombre ne dépasse pas 20 charactères.
 elif nombre=='':
     print("Aucune valeur n'a été spécifiée")
     quit()
+elif nombre<='0':
+    print("Le nombre ne doit pas être inférieur à 1 !")
+    quit()
 try:  
     base_i=int(input("Donner la base initiale différente de 2, 10 ou 16 : ")) #Base initiale.
 except:
@@ -33,7 +36,7 @@ elif base_i==2 or base_i==10 or base_i==16: #Vérifie si le nombre défini ne co
     print("Les bases 2, 10 et 16 ne sont pas disponible à la conversion !")
     quit()
 try:
-    base_f=int(input("Donnez la base finale différente de 2, 10 ou 16 : ")) #Base finale.
+    base_f=int(input("Donnez la base finale différente de la base initiale et de 2, 10 ou 16 : ")) #Base finale.
 except:
     print("Impossible de mettre un charactère pour une base !")
     quit()
@@ -49,7 +52,7 @@ elif base_f==base_i: #Vérifie si la base final ne correspond pas avec la base i
 u=1
 p=0
 nombre_base10=0
-
+#Programme de conversion base i en base 10.
 for i in range (0,len(nombre)):
     n=nombre[-u]
     n=str(n)
