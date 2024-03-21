@@ -1,5 +1,5 @@
-**#Projet NSI**
-**##Convertisseur-de-bases**
+#Projet NSI
+##Convertisseur-de-bases
 
 
 ###•	Démarche retenue pour le programme :
