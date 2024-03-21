@@ -1,15 +1,29 @@
-# Projet NSI
-## Convertisseur de bases
+# Convertisseur de Base
+
+Ce programme Python est un convertisseur de base qui permet de convertir un nombre d'une base initiale à une base finale. Il utilise la méthode de la division euclidienne pour effectuer la conversion.
+
+## Démarche du Programme
+
+Ce programme demande à l'utilisateur de fournir un nombre dans une base donnée, puis il le convertit dans la base spécifiée. Pour ce faire, le programme convertit d'abord le nombre initial en base 10 en utilisant la table ASCII pour les caractères non numériques. Ensuite, il effectue la conversion en utilisant la division euclidienne.
+
+## Limites du Programme
+
+Le programme respecte les contraintes définies dans le cahier des charges. Il peut convertir des nombres de la base 2 à la base 20, ne dépassant pas 20 chiffres, à l'exception des bases 2, 10 et 16. De plus, il est impossible de convertir un nombre dans sa propre base.
+
+## Mini Manuel d'Utilisation
+
+1. **Entrées :**
+   - Fournir un nombre ne dépassant pas 20 chiffres dans la base initiale souhaitée.
+   - Définir une base initiale différente de 2, 10 ou 16, comprise entre 2 et 20 inclusivement.
+   - Spécifier une base finale différente de la base initiale et différente de 2, 10 ou 16, comprise entre 2 et 20 inclusivement.
+
+2. **Exceptions :**
+   - Le nombre ne doit pas dépasser 20 chiffres ni être inférieur à 1.
+   - La base initiale et la base finale ne doivent pas être 2, 10 ou 16.
+   - Les bases doivent être des entiers compris entre 2 et 20.
+   - Les caractères ne sont pas acceptés comme entrées pour les bases.
 
 
-### Démarche retenue pour le programme :
-Pour ce programme de convertisseur de base, j'ai choisi de demander un nombre quelconque en base choisie et de le convertir dans la base demandée. Pour cela, le programme convertit le nombre initial en base 10, en convertissant les caractères en nombres via la table ASCII, pour pouvoir le rendre en la base demandée via la division euclidienne.
+## Auteur
 
-### Les limites du programme :
-Le programme suit les limites imposées par le cahier des charges. Il peut convertir tous les nombres de la base 2 à la base 20 ne dépassant pas 20 chiffres, excluant les bases 2, 10 et 16 et il est impossible de convertir la base par elle-même.
-
-### Mini manuel d'utilisation :
-Le programme s'utilise de façon très simple : il suffit de donner un nombre dans la base voulue et de définir la base souhaitée pour faire fonctionner la conversion. Mais cela implique quelques exceptions :
-– Le nombre donné ne doit pas dépasser 20 chiffres et être inférieur à 1. Il ne doit pas non plus être indéfini.
-– La base initiale doit être différente de 2, 10 ou 16. Elle ne doit pas être supérieure à 20 ou inférieure à 2. Les caractères ne sont évidemment pas acceptés.
-– La base finale doit être différente de l'initiale et de 2, 10 ou 16. Elle ne doit pas être supérieure à 20 ou inférieure à 2. Les caractères ne sont évidemment pas acceptés.
+Ce programme a été développé par [Floryan BORNET](https://github.com/BornetFloryan). 
